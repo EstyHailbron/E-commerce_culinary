@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="foreach.css">
+  <link rel="stylesheet" href="/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./fontawesome/css/all.css" />
+</head>
+
+<body>
+  <!-- Navigation Menu -->
+  <nav class="navbar navbar-expand-lg bg-light" style="background-color:black !important ;color: #FFA234 !important; ">
+    <div class="container-fluid">
+      <a class="btn btn-primaryt" class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModalLong33 "
+        style="color: #FFA234 !important;background-color: black; border: none !important; ">
+        <i class="fa fa-shopping-cart " style="font-size: 3vh;"></i>
+      </a>
+      <!-- Modal1 -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-color: black;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle" style="color: #FFA234;">our story</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                style="background-color: #FFA234;">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="color: #FFA234; background-color:black; font-size: 17px;direction: rtl;">
+              הסיפור שלנו מתחיל אי שם אזור ירושלים כששני חברים ילדות מחליטים יום אחד שיש להם חזון:
+              <br>
+              להקים רשת מסעדות חלבית משפחתית עם בשורה חברתית. רשת שלא מתפשרת על שירות מצוין לצד תפריט עשיר ואפשרויות
+              הוגנות
+              <br>
+              לכל לקוח. השותפות המיוחדת בין השניים הבאים מתחומים שונים יצרה חיבור יוצר דופן הבא לידי ביטוי בניהול יצירתי
+              <br>
+              ומדויק של הרשת.
+              <br>
+              הסניף הראשון נפתח בשנת 2016 בעיר בית שמש ועמו התרגשות רבה בין העובדים תושבי המקום והישובים בסביבה. בהמשך,
+              <br>
+              בעשייה ובהצלחה.
+              <br>
+              הקמת מוקד ההזמנות היווה אבן דרך בשדרוג חווית מוצרים ובימים אלו ממש ממשיכה הרשת לפתח עוד פלטפורמות ושירותים
+              <br>
+              אנו במשולשים מאמינים בהצבת רף גבוה ויודעים כי הלקוחות שלנו שבעי רצון מהמנות והשירות שלנו וזה מה שדוחף
+              אותנו
+              <br>
+              להמשיך ולספק חוויה חלבית משפחתית יוצרת דופן.
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                style="color: black; background-color:#FFA234 ;">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal2 -->
+      <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-color: black;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle" style="color: #FFA234;">Our branches</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                style="background-color: #FFA234;">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="color: #FFA234; background-color:black; font-size: 25px; direction: rtl;">
+              סניף עזריאלי מודיעין:
+              <br>
+              <img src="images/icon-gps.svg">
+              כתובת-
+              <br>
+              לב העיר 2, מודיעין
+              <br>
+              <img src="images/icon-clock.svg">
+              שעות פעילות-
+              <br>
+              א'-ה' - 10:30-22:00
+              <br>
+              מוצ'ש עד 23:00
+              <br>
+              <img src="images/icon-phone.svg">
+              טלפון-
+              <br>
+              1700-55-90-55
+              <br><br>
+              סניף בית שמש:
+              <br>
+              <img src="images/icon-gps.svg">
+              כתובת-
+              <br>
+              שד' יגאל אלון 6, בית שמש
+              <br>
+              <img src="images/icon-clock.svg">
+              שעות פעילות-
+              <br>
+              א'-ה' - 10:30-23:00
+              <br>
+              מוצ"ש - חצי שעה אחרי צאת השבת ועד 00:00
+              <br>
+              <img src="images/icon-phone.svg">
+              טלפון-
+              <br>
+              1700-55-90-5
+              <br><br>
+              סניף בית"ר עלית:
+              <br>
+              <img src="images/icon-gps.svg">
+              כתובת-
+              <br>
+              הר"ן 7, בית"ר עלית
+              <br>
+              <img src="images/icon-clock.svg">
+              שעות פעילות-
+              <br>
+              א'-ה' - 10:30-23:00
+              <br>
+              מוצ"ש - חצי שעה אחרי צאת השבת ועד 00:00
+              <br>
+              <img src="images/icon-phone.svg">
+              טלפון-
+              <br>
+              1700-55-90-55
+              <br><br>
+              סניף רמת בית שמש:
+              <br>
+              <img src="images/icon-gps.svg">
+              כתובת-
+              <br>
+              נחל הקישון 48, בית שמש
+              <br>
+              <img src="images/icon-clock.svg">
+              שעות פעילות-
+              <br>
+              א'-ה' - 10:30-23:00
+              <br>
+              מוצ"ש - חצי שעה אחרי צאת השבת ועד 00:00
+              <br>
+              <img src="images/icon-phone.svg">
+              טלפון-
+              <br>
+              1700-55-90-55
+              <br><br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                style="color: black; background-color:#FFA234 ;">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal3 -->
+      <div class="modal fade" id="exampleModalLong33" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle33" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-color: black;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle33" style="color: white;"><i class="fa fa-shopping-cart "
+                  style="font-size: 6vh; padding: 10px;"></i> <i class="fa fa-shopping-cart "
+                  style="font-size: 6vh; padding: 10px;"></i><i class="fa fa-shopping-cart "
+                  style="font-size: 6vh; padding: 10px;"></i><i class="fa fa-shopping-cart "
+                  style="font-size: 6vh; padding: 10px;"></i><i class="fa fa-shopping-cart "
+                  style="font-size: 6vh; padding: 10px;"></i><i class="fa fa-shopping-cart "
+                  style="font-size: 6vh; padding: 10px;"></i> </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                style="background-color: #FFA234;">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="color: #FFA234; background-color:black; font-size: 17px;direction: rtl;">
+              <button id="button"
+                style="color: #FFA234; background-color:black; font-size: 30px;direction: rtl;">לתשלום:</button>
+              <div id="product_container" style="color: white !important;"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                style="color: black; background-color:#FFA234 ;">סגור</button>
+              <a type="button" class="btn btn-primary" href="form.html"
+                style="color: black; background-color: #FFA234; font-size: 17px;direction: rtl; border: none;">לתשלום</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="navbar-brand" href="send.html" style="color: #FFA234 !important; padding: 3px; ">
+        <i class='fas fa-motorcycle ' style="font-size: 3vh;"></i>
+      </a>
+      <a class="navbar-brand" href="form.html" style="color: #FFA234 !important; padding: 3px; ">
+        <i class="fa fa-credit-card" style="font-size: 3vh;"></i>
+      </a>
+      <li class="nav-item dropdown" style="text-decoration:none;  list-style-type: none;">
+        <a class="navbar-brand" href="#" style="color: #FFA234 !important; padding: 10px;;" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          ...עוד עלינו ▼
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="btn btn-primary" class="dropdown-item" href="#" data-toggle="modal"
+              data-target="#exampleModalLong "
+              style="color: #FFA234 !important; padding: 10px; background-color: white; border-color:white ;">
+              הסיפור שלנו
+            </a></li>
+          <hr class="dropdown-divider">
+      </li>
+      <li><a class="btn btn-primary" class="dropdown-item" href="#" data-toggle="modal"
+          data-target="#exampleModalLong2 "
+          style="color: #FFA234 !important; padding: 10px; background-color: white; border-color:white ;">
+          סניפים
+        </a></li>
+      </ul>
+      </li>
+      <a class="navbar-brand" onclick="set('dessert')" href="food.html"
+        style="color: #FFA234 !important; padding: 10px; "> קינוחים <img src="images/dessert.svg">
+      </a>
+      <a class="navbar-brand" onclick="set('pukatcha')" href="food.html"
+        style="color: #FFA234 !important; padding: 10px;  ">פוקצות <img src="images/pucatcha.svg">
+      </a>
+      <a class="navbar-brand" onclick="set('salad')" href="food.html"
+        style="color: #FFA234 !important; padding: 10px; ">סלטים <img src="images/salad.svg">
+      </a>
+      <a class="navbar-brand" onclick="set('ikarit')" href="food.html"
+        style="color: #FFA234 !important; padding: 10px; ">עיקרית <img src="images/ikarit.svg">
+      </a>
+      <a class="navbar-brand" onclick="set('pizza')" href="food.html"
+        style="color: #FFA234 !important; padding: 10px; ">פיצה <img src="images/pizza.svg">
+      </a>
+      <a class="navbar-brand" onclick="set('mukram')" href="food.html"
+        style="color: #FFA234 !important; padding: 10px; ">פסטות <img src="images/pasta.svg">
+      </a>
+      <a class="navbar-brand" onclick="set('tostt')" href="food.html"
+        style="color: #FFA234 !important; padding: 10px; ">טוסטים <img src="images/tostt.svg">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"></li>
+        </ul>
+        <form class="d-flex" role="search" style="color: #FFA234 !important; background-color: black !important;">
+          <div id="label_search"></div>
+          <a class="sub" type="submit" style="color: #FFA234 !important; width: 60px !important;"> <i
+              class="icons fas fa-search"
+              style="color:#FFA234 !important; font-size:30px; background-color: black !important;"></i>
+          </a>
+        </form>
+
+        <a class="navbar-brand" href="#" style="color: #FFA234 !important; "> <a href="index.html"><img
+              src="images/logo.png" width="75%" /></a>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="hidden">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document" style="border:3px solid white;">
+        <div class="modal-content" style="background-color: black; color: #FFA234;; text-align: center;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+              style="background-color: #FFA234;">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h2> !נוסף לסל בהצלחה </h2>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+              style="background-color:black; color: black;border-color: black;">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  צאט!!! -->
+  <button class="openChatBtn" onclick="openForm()"
+    style="color: black; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border: 3px solid white;">
+    דברו איתנו
+    <i class='fas fa-comment-dots ' style="font-size: 3vh;"></i>
+
+  </button>
+  <div class="openChat">
+    <form>
+      <h1>Chat </h1>
+      <label for="msg"><b>Message</b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn close" onclick="closeForm()">
+        Close
+      </button>
+    </form>
+  </div>
+  <div id="show"></div>
+  <!-- Footer -->
+  <footer class="bg-light text-center "
+    style="background-color: black !important; padding-bottom: 50px; padding-top: 50px; ">
+    <!-- Grid container -->
+    <div class="container p-4" style="padding: 10px !important;  border: none !important;">
+      <div class="container p-4" style="padding: 10px !important;  border: none !important;">
+
+        <!-- Section: Social media -->
+        <section class="mb-4" style="padding: 10px !important;border: none !important;">
+          <!-- Facebook -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color:  #FFA234 !important;border-color:white;"
+            href="https://www.facebook.com/MESHULASHIM7/" role="button"><i class="fab fa-facebook-f"
+              style="padding: 10px !important; border: none; "></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color:red;border-color:white;"
+            href="https://www.twitter.com/MESHULASHIM7" role="button"><i class="fab fa-twitter"
+              style="padding: 10px !important; border-color: black !important;"></i></a>
+
+          <!-- Google -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color:black;border-color:white;"
+            href="https://www.twitter.com/MESHULASHIM7" role="button"><i class="fab fa-google"
+              style="padding: 10px !important; border-color: black !important;"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: green ;border-color:white;"
+            href="https://www.twitter.com/MESHULASHIM7" role="button"><i class="fab fa-instagram"
+              style="padding: 10px !important; border-color: black !important;"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #FFA234;border-color:white;"
+            href="https://www.twitter.com/MESHULASHIM7" role="button"><i class="fab fa-linkedin-in"
+              style="padding: 10px !important; border-color: black !important;"></i></a>
+          <!-- Github -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color:black;border-color:white;"
+            href="https://www.twitter.com/MESHULASHIM7" role="button"><i class="fab fa-github"
+              style="padding: 10px !important; border-color: black !important;"></i></a>
+        </section>
+        <!-- Section: Links -->
+        <section>
+          <!--Grid row-->
+          <div class="row" style="padding-top: 100px;">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">פיצות <img src="images/pizza.svg" alt=""></h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  XL פיצה שמנת +בצל
+                </li>
+                <li>
+                  פיצה שמנת משפחתית
+                </li>
+                <li>
+                  XL פיצה עם תוספות
+                </li>
+                <li>
+                  L פיצה עם תוספות
+                </li>
+                <li>
+                  L פיצה משפחתית
+                </li>
+                XL פיצה משפחתית
+                </li>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">סלט <img src="images/salad.svg" alt=""></h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  סלט בטטה קריספית
+                </li>
+                <li>
+                  סלט חלומי
+                </li>
+                <li>
+                  סלט בשילוב טונה
+                </li>
+                <li>
+                  סלט יווני
+                </li>
+                <li>
+                  סלט
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">פסטות <img src="images/pasta.svg" alt=""></h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  אלפרדו
+                </li>
+                <li>
+                  ארבאיטה
+                </li>
+                <li>
+                  רביולי בשילוב בטטה
+                </li>
+                <li>
+                  פסטה רוזה
+                </li>
+                <li>
+                  מוקרם ברוטב שמנת + בטטות
+                </li>
+                <li>
+                  תפו"א מוקרם
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">פוקצות <img src="images/pucatcha.svg" alt=""></h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  פוקצ'ה
+                </li>
+                <li>
+                  פוקצ'ה שקשוקה
+                </li>
+                <li>
+                  פוקצה עם חצילים
+                </li>
+                <li>
+                  פוקצה עם בצל ורוזמרין
+                </li>
+                <li>
+                  פוקצ'ה קריספי קפרזה
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">צ'יפס <img src="" alt=""></h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  צ'יפס עם רוטב
+                </li>
+                <li>
+                  בטטה צ'יפס
+                </li>
+                <li>
+                  טבעות בצל
+                </li>
+                <li>
+                  צ'יפס מתובל
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">קינוחים <img src="images/dessert.svg" alt=""></h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  אייס קפה עם ריבת חלב
+                </li>
+                <li>
+                  גלידה פרי
+                </li>
+                <li>
+                  פרוזן
+                </li>
+                <li>
+                  וופל בלגי
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">עיקרית <img src="images/ikarit.svg" alt=""></h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  סלומון מעושן
+                </li>
+                <li>
+                  דג מרוקאי
+                </li>
+                <li>
+                  מרק הבית
+                </li>
+                <li>
+                  מרק בצל ופטריות
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">טוסטים <img src="images/tostt.svg" alt=""></h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  טוסט חלומי
+                </li>
+                <li>
+                  טוסט בהרכבה אישית
+                </li>
+                <li>
+                  טוסט פטריות
+                </li>
+                <li>
+                  טוסט משולשים פתוח
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="jquery.js"></script>
+
+  <script src="food.js"></script>
+</body>
+
+</html>

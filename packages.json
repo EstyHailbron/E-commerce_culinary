@@ -1,0 +1,282 @@
+[
+    {
+        "name": "pizza",
+        "price": 65,
+        "description": "L פיצה עם תוספות",
+        "path": "images/with_tosafot.png",
+        "quantity": 1,
+        "code": 123
+    },
+    {
+        "name": "pizza",
+        "price": 50,
+        "description": "פיצה שמנת משפחתית ",
+        "path": "images/shamenet.png",
+        "quantity": 1,
+        "code": 124
+    },
+    {
+        "name": "pizza",
+        "price": 65,
+        "description": "XL פיצה משפחתית ",
+        "path": "images/family_xl.png",
+        "quantity": 1,
+        "code": 125
+    },
+    {
+        "name": "pizza",
+        "price": 70,
+        "description": "L פיצה משפחתית ",
+        "path": "images/family.png",
+        "quantity": 1,
+        "code": 126
+    },
+    {
+        "name": "pizza",
+        "price": 50,
+        "description": "XL פיצה שמנת +בצל ",
+        "path": "images/onion.png",
+        "quantity": 1,
+        "code": 127
+    },
+    {
+        "name": "pizza",
+        "price": 55,
+        "description": "XL פיצה עם תוספות ",
+        "path": "images/tosafot_xl.png",
+        "quantity": 1,
+        "code": 128
+    },
+    {
+        "name": "salad",
+        "price": 40,
+        "description": " סלט בטטה קריספית",
+        "path": "images/sweet_potato.png",
+        "quantity": 1,
+        "code": 129
+    },
+    {
+        "name": "salad",
+        "price": 45,
+        "description": "סלט חלומי",
+        "path": "images/dream_salad.png",
+        "quantity": 1,
+        "code": 130
+    },
+    {
+        "name": "salad",
+        "price": 45,
+        "description": "סלט בשילוב טונה",
+        "path": "images/tuna.png",
+        "quantity": 1,
+        "code": 131
+    },
+    {
+        "name": "salad",
+        "price": 42,
+        "description": "סלט יווני",
+        "path": "images/yavan_salad.png",
+        "quantity": 1,
+        "code": 132
+    },
+    {
+        "name": "salad",
+        "price": 35,
+        "description": "סלט",
+        "path": "images/salad_class.png",
+        "quantity": 1,
+        "code": 133
+    },
+    {
+        "name": "mukram",
+        "description": "אלפרדו",
+        "price": 45,
+        "path": "images/alfardo.png",
+        "quantity": 1,
+        "code": 134
+    },
+    {
+        "name": "mukram",
+        "description": "ארבאיטה",
+        "price": 35,
+        "path": "images/arbaita.png",
+        "quantity": 1,
+        "code": 135
+    },
+    {
+        "name": "mukram",
+        "price": 35,
+        "description": "רביולי עם בטטה",
+        "path": "images/revyuli_batata.png",
+        "quantity": 1,
+        "code": 136
+    },
+    {
+        "name": "mukram",
+        "description": "רביולי ברוטב רוזה",
+        "price": 52,
+        "path": "images/revyuli_shamenet.png",
+        "quantity": 1,
+        "code": 137
+    },
+    {
+        "name": "mukram",
+        "description": "פסטה רוזה",
+        "price": 47,
+        "path": "images/roza.png",
+        "quantity": 1,
+        "code": 138
+    },
+    {
+        "name": "mukram",
+        "description": "מוקרם ברוטב שמנת+בטטות",
+        "price": 45,
+        "path": "images/shamenet_batata.png",
+        "quantity": 1,
+        "code": 139
+    },
+    {
+        "name": "mukram",
+        "description": "תפו'א מוקרם",
+        "price": 43,
+        "path": "images/potato.png",
+        "quantity": 1,
+        "code": 140
+    },
+    {
+        "name": "pukatcha",
+        "description": "פוקצ'ה אנטיפסטי",
+        "price": 35,
+        "path": "images/pukatch_antipasti.png",
+        "quantity": 1,
+        "code": 141
+    },
+    {
+        "name": "pukatcha",
+        "description": "פוקצ'ה",
+        "price": 30,
+        "path": "images/pukatch_class.png",
+        "quantity": 1,
+        "code": 142
+    },
+    {
+        "name": "pukatcha",
+        "description": "פוקצ'ה שקשוקה",
+        "price": 35,
+        "path": "images/pukatch_shakshuka.png",
+        "quantity": 1,
+        "code": 143
+    },
+    {
+        "name": "pukatcha",
+        "description": "פוקצ'ה קריספי קפרזה",
+        "price": 40,
+        "path": "images/pukatcha_krispi.png",
+        "quantity": 1,
+        "code": 144
+    },
+    {
+        "name": "pukatcha",
+        "description": "לחם שום",
+        "price": 20,
+        "path": "images/shum.png",
+        "quantity": 1,
+        "code": 145
+    },
+    {
+        "name": "chips",
+        "description": "צ'יפס",
+        "price": 30,
+        "path": "images/class_chips.png",
+        "quantity": 1,
+        "code": 146
+    },
+    {
+        "name": "chips",
+        "description": "צ'יפס בטטה",
+        "price": 35,
+        "path": "images/batata_chips.png",
+        "quantity": 1,
+        "code": 147
+    },
+    {
+        "name": "chips",
+        "description": "טבעות בצל",
+        "price": 28,
+        "path": "images/onion_rings.png",
+        "quantity": 1,
+        "code": 148
+    },
+    {
+        "name": "chips",
+        "description": "צ'יפס מתובל",
+        "price": 35,
+        "path": "images/spiced_chips.png",
+        "quantity": 1,
+        "code": 149
+    },
+    {
+        "name": "tostt",
+        "description": "טוסט משולשים פתוח",
+        "price": 30,
+        "path": "images/toast1.png",
+        "quantity": 1,
+        "code": 150
+    },
+    {
+        "name": "tostt",
+        "description": "טוסט פטריות",
+        "price": 35,
+        "path": "images/toast2.png",
+        "quantity": 1,
+        "code": 151
+    },
+    {
+        "name": "dessert",
+        "description": "גבינת לוטוס",
+        "price": 35,
+        "path": "images/dessert2.png",
+        "quantity": 1,
+        "code": 152
+    },
+    {
+        "name": "dessert",
+        "description": "קליק אוראו",
+        "price": 35,
+        "path": "images/dessert1.png",
+        "quantity": 1,
+        "code": 153
+    },
+    {
+        "name": "ikarit",
+        "description": "פילה סלמון",
+        "price": 45,
+        "path": "images/salmon.png",
+        "quantity": 1,
+        "code": 154
+    },
+    {
+        "name": "ikarit",
+        "description": "פיש אנד צ'יפס",
+        "price": 40,
+        "path": "images/fish&chips.png",
+        "quantity": 1,
+        "code": 155
+    },
+    {
+        "name": "ikarit",
+        "description": "הום פרייז",
+        "price": 39,
+        "path": "images/home_frize.png",
+        "quantity": 1,
+        "code": 156
+    },
+    {
+        "name": "ikarit",
+        "description": "תפו'א מוקרם",
+        "price": 39,
+        "path": "images/mukram_potato.png",
+        "quantity": 1,
+        "code": 157
+    }
+]

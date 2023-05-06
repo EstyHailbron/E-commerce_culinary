@@ -1,0 +1,101 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    background-image: url(images/background-header.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: black;
+    border-radius: 25px;
+    padding: 1.5em;
+    margin-top: -2em;
+    width: 25em;
+    height: 31.25em;
+    box-shadow: 0 7px 9px rgba(251, 12, 12, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    animation-name: hanging;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    transform-origin: center top;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes hanging {
+    0% {
+        transform: rotate(7deg);
+    }
+
+    100% {
+        transform: rotate(-7deg);
+    }
+}
+
+#paper-pin {
+    width: 60px;
+    height: 60px;
+    transform: translate(30%, 0);
+    z-index: 100;
+}
+
+.wrapper input {
+    margin: 1.5em 0;
+}
+
+.form h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+}
+
+.form input {
+    outline: 0;
+    font-size: 0.8em;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+}
+
+.form input:not([type="submit"]) {
+    padding: 1em 7em 1em 1.5em;
+    background: white;
+    border-radius: 25px;
+    border: 4px solid #FFA234;
+}
+
+.form input[type="submit"] {
+    font-size: 0.9em;
+    padding: 0.7em 3em;
+    border: 4px solid#FFA234;
+    border-radius: 25px;
+    color: black;
+    background: white;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.form input[type="submit"]:hover {
+    cursor: pointer;
+}

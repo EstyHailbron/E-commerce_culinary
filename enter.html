@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
+  @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+
+  body,
+  .message,
+  .form,
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  body {
+    height: 100vh;
+    background-image: url(images/background-header.jpg);
+    opacity: 90%;
+    background-repeat: no-repeat;
+    font-family: "Source Sans Pro", sans-serif;
+    overflow: hidden;
+  }
+
+  .container {
+    width: 900px;
+    height: 500px;
+    background: white;
+    position: relative;
+    display: grid;
+    grid-template: 100%/50% 50%;
+    box-shadow: 2px 2px 10px 0 rgba(51, 51, 51, 0.2);
+  }
+
+  .message {
+    position: absolute;
+    background: white;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s all ease;
+    transform: translateX(100%);
+    z-index: 4;
+  }
+
+  .message:before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 70%;
+    background: #c3c3d8;
+    opacity: 0;
+    left: 0;
+    top: 15%;
+  }
+
+  .message .button {
+    margin: 5px 0;
+  }
+
+  .signup:before {
+    opacity: 0.3;
+    left: 0;
+  }
+
+  .login:before {
+    opacity: 0.3;
+    left: 100%;
+  }
+
+  .btn-wrapper {
+    width: 60%;
+  }
+
+  .form {
+    width: 100%;
+    height: 100%;
+  }
+
+  .form--heading {
+    font-size: 25px;
+    height: 50px;
+    color: #FFA234;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+
+  .form--signup {
+    border-right: 1px solid #999;
+  }
+
+  form {
+    width: 70%;
+  }
+
+  form>* {
+    margin: 10px;
+  }
+
+  form input {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    font-size: 13px;
+    font-weight: 300;
+    color: #797a9e;
+    letter-spacing: 0.11em;
+  }
+
+  form input::placeholder {
+    color: #333;
+    font-size: 10px;
+  }
+
+  form input:focus {
+    outline: 0;
+    border-bottom: 1px solid rgba(128, 155, 206, 0.7);
+    transition: 0.6s all ease;
+  }
+
+  .button {
+    width: 100%;
+    height: 30px;
+    border: 1px solid white !important;
+    outline: 0;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    z-index: 3;
+    background: white;
+    font-family: "Source Sans Pro", sans-serif;
+    cursor: pointer;
+  }
+
+  .button #_sighUpButton {
+    border: 1px solid white !important;
+  }
+
+
+  .container form button {
+    position: relative;
+    display: inline-block;
+    /* padding: 10px 20px; */
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+
+  .container button:hover {
+    background: black;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #FFA234,
+      0 0 25px #FFA234,
+      0 0 50px #FFA234,
+      0 0 100px #FFA234;
+  }
+
+  .container button span {
+    position: absolute;
+    display: block;
+  }
+
+  .container button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, red);
+    animation: btn-anim1 1s linear infinite;
+  }
+
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+
+  .container button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, green);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+
+  .container button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #FFA234);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+
+  .container button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #082222);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+
+
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+
+  a .button {
+    align-items: center;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="message signup">
+      <div class="btn-wrapper">
+        <button class="button" id="signup">Sign Up</button>
+        <button class="button" id="login"> Login</button>
+      </div>
+    </div>
+    <div class="form form--signup">
+      <img src="images/logo.png" width="34%">
+      <form autocomplete="off">
+        <input type="text" class="username" placeholder="Name">
+        <input type="email" class="user_email" placeholder="Email">
+        <input type="password" class="userCode" placeholder="Password">
+        <button class="button" id="_sighUpButton">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Sign Up</button>
+      </form>
+    </div>
+
+    <div class="form form--login">
+      <div class="form--heading">Welcome back! </div>
+      <form autocomplete="off">
+        <input type="text" class="nameLog" placeholder="Name">
+        <input type="password" class="passwordlog" placeholder="Password">
+        <button class="button" id="login_2">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Login</button>
+      </form>
+    </div>
+  </div>
+  <a href="index.html" style="font-size: 30px; text-decoration: none; color: white;">כניסה ←←←</a>
+</body>
+<script src="jquery.js"></script>
+<script src="enter.js"></script>
+
+
+
+
+</html>
